@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>오즈리얼트립</title>
+    <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/8cff7363d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/section1.js" defer></script>
+    <script src="./js/slidebtn.js" defer></script>
+    <script src="./js/2_section.js" defer></script>
+  </head>
+  <body>
+    <!-- 위로 올리기 버튼-->
+    <a href="#top" id="up_btn"><img src="./images/up_arrow.png" /></a>
+    <div class="navbar__wrapper">
+      <!-- 적응형-->
+      <div class="toggle__btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- 네비바-->
+      <h1 id="nav__logo">
+        <a href="#top"><img src="./images/logo-removebg.png" alt="Jin" /></a>
+      </h1>
+      <div class="navbar__container">
+        <ul id="navbar">
+          <li class="navbar__option">
+            <div class="in_out__box">
+              <a href="#section1" class="in"><span>소개글</span></a>
+              <a href="#section1" class="out"><span>Home</span></a>
+            </div>
+          </li>
+          <li class="navbar__option">
+            <div class="in_out__box">
+              <a href="#table__section__id" class="in"><span>떠나요</span></a>
+              <a href="#table__section__id" class="out"><span>Trip</span></a>
+            </div>
+          </li>
+          <li class="navbar__option">
+            <div class="in_out__box">
+              <a href="#section3" class="in"><span>다양한 재미</span></a>
+              <a href="#section3" class="out"><span>Play</span></a>
+            </div>
+          </li>
+          <li class="navbar__option">
+            <div class="in_out__box">
+              <a href="#section4" class="in"><span>더 많은 정보</span></a>
+              <a href="#section4" class="out"><span>Air</span></a>
+            </div>
+          </li>
+          <li class="navbar__option">
+            <div class="in_out__box">
+              <a href="#footer" class="in"><span>팀원</span></a>
+              <a href="#footer" class="out"><span>Team</span></a>
+            </div>
+          </li>
+        </ul>
+        <div class="navbar__right">
+          <div class="item__box">
+            <a>
+              <i class="fa-solid fa-magnifying-glass"></i><span>검색</span>
+            </a>
+          </div>
+          <div class="item__box">
+            <a>
+              <i class="fa-solid fa-plane-departure"></i><span>여행</span>
+            </a>
+          </div>
+          <div class="item__box">
+            <a href="https://www.airbnb.co.kr/" target="_blank">
+              <i class="fa-solid fa-house-chimney"></i><span>숙소</span>
+            </a>
+          </div>
+          <div class="item__box">
+            <a
+              href="https://www.ybtour.co.kr/search/searchPdt.yb?query=%ED%8C%A8%ED%82%A4%EC%A7%80"
+              target="_blank"
+            >
+              <i class="fa-solid fa-suitcase-rolling"></i><span>패키지</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--적응형 메뉴바-->
+    <div class="hidden__menu">
+      <li class="hidden__navbar__option">
+        <div class="hidden__in_out__box">
+          <a href="#" class="hidden__in"><span>섹션1</span></a>
+        </div>
+      </li>
+      <li class="hidden__navbar__option">
+        <div class="hidden__in_out__box">
+          <a href="#" class="hidden__in"><span>섹션2</span></a>
+        </div>
+      </li>
+      <li class="hidden__navbar__option">
+        <div class="hidden__in_out__box">
+          <a href="#" class="hidden__in"><span>섹션3</span></a>
+        </div>
+      </li>
+      <li class="hidden__navbar__option">
+        <div class="hidden__in_out__box">
+          <a href="#" class="hidden__in"><span>섹션4</span></a>
+        </div>
+      </li>
+    </div>
+
+    <!--검색 창-->
+    <div id="search" class="search__container">
+      <input
+        id="search__box"
+        type="search"
+        placeholder="검색어를 입력해주세요."
+      />
+      <label for="search__box" class="fa-solid fa-magnifying-glass"></label>
+    </div>
+
+    <!-- section1-->
+    <section id="section1" class="banner__section">
+      <div class="video__container">
+        <video
+          class="slide__video"
+          src="./video/australia.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          class="slide__video"
+          src="./video/czech.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          class="slide__video"
+          src="./video/japansushi.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          class="slide__video"
+          src="./video/hawaii.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          class="slide__video"
+          src="./video/switzerland.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="banner__content active">
+          <h1>Australia</h1>
+          <p>
+            호주의 주/도인 사우스 오스트레일리아에는 애들레이드, 마운트갬비어,
+            캥거루 아일랜드 등의 대표적인 도시가 있습니다. 다채로운 볼거리와
+            즐길 거리가 가득한 이곳으로 떠나보세요!
+          </p>
+          <div class="social__media">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="banner__content">
+          <h1>Czech Republic</h1>
+          <p>
+            유럽에 있는 국가/지역인 체코! 잘 알려진 도시로는 프라하,
+            체스키크롬로프, 브르노 등이 있습니다. 나에게 꼭 맞는 다양한 즐길
+            거리와 볼거리를 만나보세요.
+          </p>
+          <div class="social__media">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="banner__content">
+          <h1>Japan</h1>
+          <p>
+            아시아에 있는 국가/지역인 일본! 잘 알려진 도시로는 오사카, 도쿄,
+            후쿠오카 등이 있습니다. 나에게 꼭 맞는 다양한 즐길 거리와 먹거리를
+            만나보세요.
+          </p>
+          <div class="social__media">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="banner__content">
+          <h1>Hawaii</h1>
+          <p>
+            미국의 주/도인 하와이에는 호놀룰루, 카훌루이, 하와이 등의 대표적인
+            도시가 있습니다. 다채로운 볼거리와 즐길 거리가 가득한 이곳으로
+            떠나보세요!
+          </p>
+          <div class="social__media">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="banner__content">
+          <h1>Swiss</h1>
+          <p>
+            유럽에 있는 국가/지역인 스위스! 잘 알려진 도시로는 취리히, 제네바,
+            인터라켄 등이 있습니다. 나에게 꼭 맞는 다양한 즐길 거리와 볼거리를
+            만나보세요.
+          </p>
+          <div class="social__media">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="slide__container">
+          <div class="slide__btn active"></div>
+          <div class="slide__btn"></div>
+          <div class="slide__btn"></div>
+          <div class="slide__btn"></div>
+          <div class="slide__btn"></div>
+        </div>
+      </div>
+      <!-- <div class="banner__img__container" style="transform: translateX(0vw)">
+        <div class="banner__img__box">
+          <img src="./images/banner1.jpg" />
+        </div>
+        <div class="banner__img__box">
+          <img src="./images/banner2.jpg" />
+        </div>
+        <div class="banner__img__box">
+          <img src="./images/banner3.jpg" />
+        </div>
+      </div> -->
+
+      <!-- <button
+        type="button"
+        class="slide-1"
+        onclick="carousel_button1()"
+      ></button>
+      <button
+        type="button"
+        class="slide-2"
+        onclick="carousel_button2()"
+      ></button>
+      <button
+        type="button"
+        class="slide-3"
+        onclick="carousel_button3()"
+      ></button>
+
+      <div class="banner__button">
+        <img
+          class="banner__button_back"
+          src="./images/back-button.png"
+          onclick="carousel_back()"
+        />
+        <img
+          class="banner__button_next"
+          src="./images/next-button.png"
+          onclick="carousel_next()"
+        />
+      </div> -->
+    </section>
+
+    <div class="ads__container">
+      <span class="ads__img__box"
+        ><img class="ads__img" src="./images/ads_img.png"
+      /></span>
+      <div class="ads__box">
+        <p class="ads__tit">항공권 특가 알림을 받아보세요.</p>
+        <p class="ads__txt">
+          회원 가입 후 여행 추천 정보와 맞춤 특가 상품을 메일로 받아보세요.
+        </p>
+        <input
+          id="email__input"
+          type="email"
+          placeholder=" &#9993; 이메일 주소를 입력하세요"
+          required
+        />
+        <label for="email__input" class="ads__btn" type="submit"
+          >알림 받기</label
+        >
+      </div>
+    </div>
+
+    <section id="table__section__id" class="table__section">
+      <p class="table__tit"><span>요즘 뜨는 여행지</span> 알아볼까요?</p>
+      <p class="table__txt">항공권 최저가로 떠나보세요.</p>
+      <p class="table__txt_sub">( 2023.5.22 ~ 5.26 성인 1인 왕복 기준 )</p>
+
+      <div class="table__container">
+        <div class="table__tr">
+          <div class="table__td">
+            <a
+              href="https://www.skyscanner.co.kr/transport/flights/kr/syd/230527/230603/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27547097&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1"
+              target="_blank"
+            >
+              <div class="table__img__box">
+                <img class="table__img" src="./images/box1.jpg" />
+              </div>
+              <p class="txt">호주</p>
+              <p class="price">
+                시드니<br />
+                757,846원 ~
+              </p>
+            </a>
+          </div>
+
+          <div class="table__td">
+            <a
+              href="https://www.skyscanner.co.kr/transport/flights/kr/tyoa/230527/230603/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27542089&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1"
+              target="_blank"
+            >
+              <div class="table__img__box">
+                <img class="table__img" src="./images/box2.jpg" />
+              </div>
+              <p class="txt">일본</p>
+              <p class="price">
+                도쿄<br />
+                292,200원 ~
+              </p>
+            </a>
+          </div>
+
+          <div class="table__td">
+            <a
+              href="https://www.skyscanner.co.kr/transport/flights/kr/bkkt/230527/230603/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27536671&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1"
+              target="_blank"
+            >
+              <div class="table__img__box">
+                <img class="table__img" src="./images/box3.jpg" />
+              </div>
+              <p class="txt">태국</p>
+              <p class="price">
+                방콕<br />
+                245,800원 ~
+              </p>
+            </a>
+          </div>
+
+          <div class="table__td">
+            <a
+              href="https://www.skyscanner.co.kr/transport/flights/kr/sins/230527/230603/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27546111&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1"
+              target="_blank"
+            >
+              <div class="table__img__box">
+                <img class="table__img" src="./images/box4.jpg" />
+              </div>
+              <p class="txt">싱가포르</p>
+              <p class="price">
+                싱가포르<br />
+                532,470원 ~
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="table__tr">
+          <div class="table__td">
+            <a
+              href="https://www.skyscanner.co.kr/transport/flights/kr/ist/230527/230603/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27542903&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1"
+              target="_blank"
+            >
+              <div class="table__img__box">
+                <img class="table__img" src="./images/box5.jpg" />
+              </div>
+              <p class="txt">터키</p>
+              <p class="price">
+                이스탄불<br />
+                1,318,842원 ~
+              </p>
+            </a>
+          </div>
+          <div class="table__td">
+            <a
+              href="https://www.skyscanner.co.kr/transport/flights/kr/zrh/230527/230603/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1"
+              target="_blank"
+            >
+              <div class="table__img__box">
+                <img class="table__img" src="./images/box6.jpg" />
+              </div>
+              <p class="txt">스위스</p>
+              <p class="price">
+                취리히<br />
+                1,453,678원 ~
+              </p>
+            </a>
+          </div>
+          <div class="table__td">
+            <a
+              href="https://www.skyscanner.co.kr/transport/flights/kr/prg/230527/230603/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27546033&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1"
+              target="_blank"
+            >
+              <div class="table__img__box">
+                <img class="table__img" src="./images/box7.jpg" />
+              </div>
+              <p class="txt">체코</p>
+              <p class="price">
+                프라하<br />
+                1,774,873원 ~
+              </p>
+            </a>
+          </div>
+          <div class="table__td">
+            <a
+              href="https://www.skyscanner.co.kr/transport/flights/kr/nyca/230527/230603/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27537542&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1"
+              target="_blank"
+            >
+              <div class="table__img__box">
+                <img class="table__img" src="./images/box8.jpg" />
+              </div>
+              <p class="txt">미국</p>
+              <p class="price">
+                뉴욕<br />
+                1,936,701원 ~
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="table__button__box">
+        <button class="table__button" type="button">
+          <a
+            href="https://www.skyscanner.co.kr/flights?acorn=true&is_banana_referral=true"
+            target="_blank"
+            >항공권 더보기</a
+          >
+        </button>
+      </div>
+    </section>
+
+    <!--Section 3-->
+    <section id="section3" class="galim_section_GL">
+      <section class="headSection_GL">
+        <div class="head_box_GL">
+          <p class="head_text_GL"><b>"다양한"</b> 여행 콘텐츠!!!</p>
+          <p class="head_text_2_GL">다양한 정보를 확인해보세요.</p>
+        </div>
+      </section>
+      <div class="slide_GL slide_wrap_GL">
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">일본</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">홍콩</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">터키</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">스위스</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">프랑스</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">하이킹</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">캠핑</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">스노클링</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">서핑</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">스쿠버다이빙</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">음식</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">와인</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">맥주</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">해산물</p>
+        </div>
+        <div class="slide_item_GL">
+          <p class="contents_text_GL">디저트</p>
+        </div>
+        <div class="slide_prev_button_GL slide_button_GL"></div>
+        <div class="slide_next_button_GL slide_button_GL"></div>
+        <div class="paginationBox_GL">
+          <ul class="slide_pagination_GL"></ul>
+        </div>
+      </div>
+      <section class="btnSection_GL">
+        <div class="btn_box_GL">
+          <button class="section_1_btn_GL">미구현</button>
+          <button class="section_2_btn_GL">미구현</button>
+        </div>
+      </section>
+    </section>
+
+    <!--Section4-->
+    <hr idb="box1__line" />
+    <section id="section4" class="box">
+      <div class="box1">
+        <p class="title">휴가로 떠나기 좋은<span>다양한 여행 추천!</span></p>
+        <div class="under__title">
+          <button class="text__con">아이와 함께</button>
+          <button class="text__con">야외에서 신나게</button>
+          <button class="text__con">실내에서 쾌적하게</button>
+        </div>
+      </div>
+
+      <div class="box2">
+        <div class="box2__content">
+          <div class="cont__top">
+            <div class="cont__top1">
+              <div class="img1">
+                <img class="img__box1" src="../image/sebu.jpg" alt="세부" />
+              </div>
+              <div class="textArea">
+                <span>세부</span><br />
+                <span>해저왕국 탐험</span>
+              </div>
+            </div>
+            <div class="cont__top2">
+              <div class="img2">
+                <img
+                  class="img__box2"
+                  src="../image/hongkong.webp"
+                  alt="유레카"
+                />
+              </div>
+              <div class="textArea">
+                <span>홍콩</span><br />
+                <span>디즈니랜드</span>
+              </div>
+            </div>
+
+            <div class="cont__top3">
+              <div class="img3">
+                <img
+                  class="img__box3"
+                  src="../image/america.webp"
+                  alt="점핑피쉬"
+                />
+              </div>
+              <div class="textArea">
+                <span>미국</span><br />
+                <span>위자딩 월드 오브 해리포터</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cont__bottom">
+            <div class="cont__bottom1">
+              <div class="img4">
+                <img
+                  class="img__box4"
+                  src="../image/rusia.jpg"
+                  alt="스윙팡팡"
+                />
+              </div>
+              <div class="textArea">
+                <div class="textArea__1">러시아</div>
+                <div class="textArea__2">마렌스키 극장</div>
+              </div>
+            </div>
+
+            <div class="cont__bottom2">
+              <div class="img5">
+                <img
+                  class="img__box5"
+                  src="../image/mongolia.jpg"
+                  alt="매직붕붕카"
+                />
+              </div>
+              <div class="textArea">
+                <div class="textArea__1">몽골</div>
+                <div class="textArea__2">몽골 별 여행</div>
+              </div>
+            </div>
+
+            <div class="cont__bottom3">
+              <div class="img6">
+                <img
+                  class="img__box6"
+                  src="../image/singapore.jpg"
+                  alt="키즈토리아"
+                />
+              </div>
+              <div class="textArea">
+                <div class="textArea__1">싱가폴</div>
+                <div class="textArea__2">다양한 테마파크</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <hr id="hr__underline" />
+      <div class="boxZone">
+        <div class="note">색다른 숙소 어때?</div>
+        <div class="top__box">
+          <div class="top__box1">
+            <div class="imgBox1">
+              <img
+                class="img__box"
+                src="../image/bubble.avif"
+                alt="롯데호텔월드"
+              />
+            </div>
+            <p class="box__text1">발리</p>
+            <hr id="line1" />
+            <div class="miniText">200,000~</div>
+          </div>
+          <div class="top__box2">
+            <div class="imgBox2">
+              <img class="img__box" src="../image/mongolia.jpg" alt="샤론캣" />
+            </div>
+            <p class="box__text1">몽골</p>
+            <hr id="line2" />
+            <div class="miniText">110,000~</div>
+          </div>
+
+          <div class="top__box3">
+            <div class="imgBox3">
+              <img class="img__box" src="../image/ocean.jpg" alt="선물권" />
+            </div>
+            <p class="box__text1">몰디브</p>
+            <hr id="line3" />
+            <div class="miniText">380,000~</div>
+          </div>
+          <div class="top__box4">
+            <div class="imgBox4">
+              <img class="img__box" src="../image/oska.jpg" alt="연간이용" />
+            </div>
+            <p class="box__text1">오사카</p>
+            <hr id="line4" />
+            <div class="miniText">140,000~</div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--Last Section-->
+<section class="last_part">
+  <div class="notice__container">
+    <div class="notice__box">
+      <p class="notice__tit">리무진우 소식</p>
+      <p class="notice__tit_plus">더보기<span><i class="fa-solid fa-circle-plus"></i></span></p>
+    </div>
+    <ul class="notice__ul">
+      <li>베스트리뷰어 항공권 증정<span>5/22</span>
+      <li>항공권 저렴하게 구하는 팁<span>5/09</span>
+      <li>시기별 여행하기 좋은 나라<span>425</span>     
+    </ul>
+  </div>
+
+  <div class="app__container">
+    <p class="app_tit">여행은 가고 싶지만 계획 짜긴 귀찮을 때,</p>
+    <p class="team_name">리무진우</p>
+    
+    <div class="qr__container">
+      <div class="qr__txt">
+      여행지 날씨, 물가, 후기로 증명된 맛집 리스트까지 '리무진우'앱에서 만나보세요.</>
+      </div>
+
+      <div class="qr__box">
+        <img class="qr__img" src="./images/qrcode.png">
+      </div>
+
+      <div class="app__download">
+        <img src="./images/android.png">
+        <img src="./images/ios.png">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Footer-->
+    <section id = "footer" class="footer_section">
+      <div class="footer footer_TM">
+        <div class="footer_name">
+          <p class="footer_TMname"><b>김진우</b></p>
+          <p><img class="instaImg" src="./image/free-icon-instagram-717392.png"></img>@sds7629</p>
+          <p>MPTI: ENFP</p>
+          <p class = "p__box"><img class="emailImg" src="./image/free-icon-email-482138.png">sds7629@naver.com</p>
+        </div>
+        <div class="footer_name">
+          <p class="footer_TMname"><b>신지윤</b></p>
+          <p><img class="instaImg" src ="./image/free-icon-instagram-717392.png">@shinjiii333</p>
+          <p>MPTI: INTJ</p>
+          <p class = "p__box"><img class="emailImg" src="./image/free-icon-email-482138.png">rmeorux5870@gmail.com</p>
+        </div>
+        <div class="footer_name">
+          <p class="footer_TMname"><b>강가림</b></p>
+          <p><img class="instaImg" src="./image/free-icon-instagram-717392.png"></img>@gggggalim</p>
+          <p>MPTI: INTP</p>
+          <p class = "p__box"><img class="emailImg" src="./image/free-icon-email-482138.png">togarim@naver.com</p>
+        </div>
+        <div class="footer_name">
+          <p class="footer_TMname"><b>고륜아</b></p>
+          <p><img class="instaImg" src="./image/free-icon-instagram-717392.png"></img>@anooyr165</p>
+          <p>MPTI: INFP</p>
+          <p class = "p__box"><img class="emailImg" src="./image/free-icon-email-482138.png">ryoonago@gmail.com</p>
+        </div>
+    </div>
+    </section>
+
+  </body>
+</html>

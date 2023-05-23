@@ -1,0 +1,291 @@
+a {
+  width: 100%;
+  height: 50%;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+#nav__logo {
+  position: absolute;
+  width: 84px;
+  height: 60px;
+  left: 50px;
+  bottom: 18px;
+}
+
+#nav__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.navbar__wrapper {
+  width: 100%;
+  height: 99px;
+  position: fixed;
+  background-color: rgba(231, 230, 230, 0.637);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  z-index: 999;
+  transition: 0.5s ease;
+}
+
+.navbar__wrapper.active {
+  background-color: white;
+  transform: scale(1.02);
+}
+
+.navbar__container {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+}
+
+#navbar {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0px;
+  margin-left: 100px;
+  padding: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.navbar__option {
+  position: relative;
+  margin: 0px;
+  perspective: 1000px;
+  padding: 0px;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.in_out__box {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all ease 0.5s;
+  height: 99px;
+}
+
+.in {
+  transform: rotateX(-90deg) translateZ(-50px);
+}
+
+.out {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotateY(30deg);
+}
+
+.in_out__box:hover {
+  transform: rotateX(90deg);
+}
+
+.navbar__option a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 99px;
+}
+
+.option__content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.navbar__right {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  margin-left: 130px;
+}
+
+.item__box {
+  width: 20%;
+  height: 100%;
+  margin-left: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.item__box a:nth-child(n + 1) {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  transition: all ease 0.5s;
+}
+
+.item__box i {
+  display: block;
+  width: 100%;
+  height: 30%;
+  font-size: 30px;
+  padding-top: 30px;
+  line-height: 5px;
+}
+
+.item__box a:hover {
+  color: cornflowerblue;
+}
+
+.navbar__option::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.navbar__option:hover::after {
+  border-bottom: 15px solid skyblue;
+  border-top: 1px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  animation: blink 0.5s infinite;
+  transform: translateX(-50%);
+}
+
+.toggle__btn {
+  position: absolute;
+  display: none;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hidden__menu {
+  display: none;
+  height: 0;
+}
+
+.menu__wrapper {
+  display: none;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*위로가기 버튼*/
+#up_btn {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 40px;
+  bottom: 40px;
+  opacity: 0.2;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#up_btn img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 1004px) {
+  #nav__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+  }
+
+  .navbar__container {
+    display: none;
+  }
+
+  .toggle__btn {
+    display: block;
+    font-size: 3em;
+  }
+
+  .toggle__btn:hover {
+    cursor: pointer;
+  }
+
+  .hidden__menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 100%;
+    overflow: hidden;
+    z-index: 998;
+  }
+
+  .filter {
+    filter: blur(5px);
+  }
+
+  .open {
+    height: 100vh;
+  }
+
+  .open li:first-child {
+    animation: move 0.2s;
+  }
+
+  .open li:nth-child(2) {
+    animation: move 0.3s;
+  }
+
+  .open li:nth-child(3) {
+    animation: move 0.4s;
+  }
+
+  .open li:last-child {
+    animation: move 0.5s;
+  }
+
+  .hidden__navbar__option {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 25%;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    perspective: 1000px;
+  }
+
+  .hidden__in_out__box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hidden__in {
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+    color: lightgreen;
+    width: 100%;
+    height: 100%;
+  }
+}
